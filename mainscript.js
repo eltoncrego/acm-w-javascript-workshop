@@ -11,12 +11,21 @@ var newContact = {
 var submitForm = function(){
   // User checking -> make sure user isn't stupid
   // Check if the message is full
+    // Assign each field to an object
   if (userCheck()){
     messageCheck();
     createNewContact();
+    alert(
+      newContact.firstName
+      + " "
+      + newContact.lastName
+      + "'s Message\n"
+      + "-----------------------------"
+      + "\n" + newContact.messageBody + "\n"
+      + "-----------------------------"
+      + "\nFrom Address: " + newContact.emailAddress
+    );
   }
-  // Assign each field to an object
-
 
   // Actually submit
 }
@@ -52,7 +61,7 @@ var createNewContact = function(){
   newContact.lastName = form.lastname.value;
   newContact.emailAddress = form.email.value;
 
-  form = document.form["options"];
+  form = document.forms["options"];
   newContact.optionUpdates = form.notify_u.checked;
-  alert(newContact.optionUpdates);
+  newContact.optionServices = form.notify_s.checked;
 }

@@ -48,7 +48,7 @@ body {
   width: 100%;
 }
 
-#options textarea {
+textarea {
   width: 100%;
   height: 100pt;
 }
