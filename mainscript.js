@@ -64,5 +64,13 @@ var submitForm = function(){
       + "\nThey " + boolToWords(newContact.updates) + " contacted when the website updates."
       + "\nThey " + boolToWords(newContact.services) + " contacted with related stuff."
     );
+    window.open("mailto:"
+      + newContact.emailAddress
+      +"?subject="
+      +"Responding to "
+      +newContact.firstName
+      +" "
+      +newContact.lastName
+      + "'s Message");
   }
 }
