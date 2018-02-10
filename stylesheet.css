@@ -1,5 +1,5 @@
 html {
-  background-color: #0F0A0A;
+  background-color: #30343F;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   flex: 1;
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
-  color: #0F0A0A;
+  color: #30343F;
 }
 
 #header {
@@ -20,7 +20,7 @@ body {
   justify-content: center;
   width: 50%;
   flex: 1;
-  background-color: #7B2D26;
+  background-color: #47A8BD;
   color: #F0F3F5;
   font-weight: 800;
   border-top-left-radius: 32pt;
@@ -57,4 +57,5 @@ footer {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
   color: #F0F3F5;
+  margin: 32pt;
 }
