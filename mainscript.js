@@ -60,9 +60,9 @@ var submitForm = function(){
       + newContact.message
       + "\n---------------------------------------------"
       + "\nfrom email address: "
-      + newContact.emailAddress
-      + "\nthey " + boolToWords(newContact.updates) + " contacted when the website updates."
-      + "\nthey " + boolToWords(newContact.services) + " contacted with related stuff."
+      + newContact.emailAddress + "\n"
+      + "\nThey " + boolToWords(newContact.updates) + " contacted when the website updates."
+      + "\nThey " + boolToWords(newContact.services) + " contacted with related stuff."
     );
   }
 }
