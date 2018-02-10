@@ -1,3 +1,7 @@
+html {
+  background-color: #0F0A0A;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,6 +10,7 @@ body {
   flex: 1;
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
+  color: #0F0A0A;
 }
 
 #header {
@@ -15,20 +20,41 @@ body {
   justify-content: center;
   width: 50%;
   flex: 1;
-  background-color: #6D8EA0;
-  color: #FFFFFF;
+  background-color: #7B2D26;
+  color: #F0F3F5;
   font-weight: 800;
-  border-radius: 32;
-  padding: 0 64pt 0 64pt;
+  border-top-left-radius: 32pt;
+  border-top-right-radius: 32pt;
 }
 
 #wrapper {
   flex: 3;
-  background-color: #D3D0CB;
+  background-color: #F0F3F5;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 50%;
-  padding: 64pt;
+  padding: 32pt 0 32pt 0;
+  border-bottom-left-radius: 32pt;
+  border-bottom-right-radius: 32pt;
+}
+
+#content-wrap {
+  width: 50%;
+}
+
+#inputs input {
+  width: 100%;
+}
+
+#options textarea {
+  width: 100%;
+  height: 100pt;
+}
+
+footer {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  color: #F0F3F5;
 }
