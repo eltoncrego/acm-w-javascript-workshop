@@ -25,6 +25,24 @@ var submitForm = function(){
       + "-----------------------------"
       + "\nFrom Address: " + newContact.emailAddress
     );
+    window.open(
+      "mailto:"
+      + newContact.emailAddress
+      + "?subject="
+      + "Responding to "
+      + newContact.firstName
+      + " "
+      + newContact.lastName
+      + "'s Message"
+    );
+      // "mailto:"
+      // + newContact.emailAddress
+      // +"?subject="
+      // +"Responding to "
+      // +newContact.firstName
+      // +" "
+      // +newContact.lastName
+      // + "'s Message"
   }
 
   // Actually submit
